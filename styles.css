@@ -146,7 +146,7 @@ p {
   font-size: 11px;
   text-align: center;
 }
-.attribution p {
+.attribution #text {
   color: hsl(212, 21%, 14%);
 }
 .attribution a {
