@@ -34,6 +34,7 @@ h2 {
   line-height: 2rem;
   font-family: 'Fraunces', 'serif';
   margin: 1rem 0;
+  text-transform: capitalize;
 }
 p {
   line-height: 1.5rem;
@@ -94,7 +95,6 @@ p {
   margin-left: 1rem;
   font-weight: 500;
   font-size: 0.875rem;
-  text-decoration-line: line-through;
   color: hsl(228, 12%, 48%);
 }
 @media all and (min-width: 480px) {
@@ -125,19 +125,10 @@ p {
 }
 .product-image-desktop,
 .product-image-mobile {
+  object-fit: cover;
   max-width: 100%;
   max-height: 100vh;
   margin: auto;
-}
-@media all and (max-width: 480px) {
-  .product-image-desktop {
-    display: none;
-  }
-}
-@media all and (min-width: 480px) {
-  .product-image-mobile {
-    display: none;
-  }
 }
 .attribution {
   font-size: 11px;

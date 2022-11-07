@@ -41,6 +41,7 @@ h2 {
     line-height: 2rem;
     font-family: @fraunces;
     margin: 1rem 0;
+    text-transform: capitalize;
 }
 
 p {
@@ -102,7 +103,6 @@ p {
         margin-left: 1rem;
         font-weight: 500;
         font-size: @paragraph;
-        text-decoration-line: line-through;
         color: @dark-grayish-blue;
     }
     @media @desktop {
@@ -135,21 +135,10 @@ p {
 
 .product-image-desktop,
 .product-image-mobile {
+    object-fit: cover;
     max-width: 100%;
     max-height: 100vh;
     margin: auto;
-}
-
-.product-image-desktop {
-    @media @mobile {
-        display: none;
-    }
-}
-
-.product-image-mobile {
-    @media @desktop {
-        display: none;
-    }
 }
 
 .attribution { 
